@@ -4,6 +4,28 @@
   border-bottom: 1px solid #ccc;
 }
 
+.nav-bar {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-content: space-between;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.subpages  ul {
+  list-style: none;
+  float:  left;
+  text-align: left;
+}
+
+.subpages  li {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  cursor: pointer;
+  color: #fff;
+}
+
 .content {
   width: 100%;
   max-width: 980px;
@@ -33,13 +55,9 @@
   float: right;
 }
 
-.language-switcher {
-  background: rgba(0, 0, 0, 0.1);
-}
 
 .language-switcher ul {
   list-style: none;
-  width: 980px;
   margin: auto;
   text-align: right;
 }

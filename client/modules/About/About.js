@@ -3,19 +3,22 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
 // Import Style
-// import styles from './Home.css';
+import styles from './About.css';
 
-class Home extends Component {
+class About extends Component {
   render() {
     return (
-      <div>
-        <h1>Welcome to home page!</h1>
+      <div className={styles['about']}>
+        <h1>Hello world!</h1>
+        <h2>Hello world!</h2>
+        <h3>Hello world!</h3>
+        <h4>Hello world!</h4>
       </div>
     );
   }
 }
 
-export default Home;
+export default About;
 
 // const mapStateToProps = (state) => {
 //   return {};
@@ -25,10 +28,10 @@ export default Home;
 //   return {};
 // };
 //
-// Home.propTypes = {
+// About.propTypes = {
 // };
 //
 // export default connect(
 //   mapStateToProps,
 //   mapDispatchToProps
-// )(Home);
+// )(About);

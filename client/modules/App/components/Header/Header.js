@@ -1,9 +1,10 @@
 import React, { PropTypes } from 'react';
 import { Link } from 'react-router';
 import { FormattedMessage } from 'react-intl';
-
+// import Home from '../../../Home/Home'
 // Import Style
 import styles from './Header.css';
+
 
 export function Header(props, context) {
   const languageNodes = props.intl.enabledLanguages.map(
@@ -12,11 +13,26 @@ export function Header(props, context) {
 
   return (
     <div className={styles.header}>
-      <div className={styles['language-switcher']}>
-        <ul>
-          <li><FormattedMessage id="switchLanguage" /></li>
-          {languageNodes}
-        </ul>
+      <div className={styles['nav-bar']}>
+        <div className={styles.subpages}>
+          <ul>
+            <li className={styles['site-item']}>
+              <Link to='/home' style={{ color: '#fff', textDecoration: 'none' }}><FormattedMessage id='Home' /></Link>
+            </li>
+            <li className={styles['site-item']}>
+              <Link to='/' style={{ color: '#fff', textDecoration: 'none' }}><FormattedMessage id='PostPage' /></Link>
+            </li>
+            <li className={styles['site-item']}>
+              <Link to='/about' style={{ color: '#fff', textDecoration: 'none' }}><FormattedMessage id='About' /></Link>
+            </li>
+          </ul>
+        </div>
+        <div className={styles['language-switcher']}>
+          <ul>
+            <li><FormattedMessage id="switchLanguage" /></li>
+            {languageNodes}
+          </ul>
+        </div>
       </div>
       <div className={styles.content}>
         <h1 className={styles['site-title']}>

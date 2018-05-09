@@ -94,7 +94,7 @@ function mapStateToProps(state, props) {
 
 function mapDispatchToProps(dispatch, props) {
   return {
-    toggleEditPost: () => dispatch(toogleEditPost()),
+    toggleEditPost: () => dispatch(toggleEditPost()),
     editPostRequest: (post) => dispatch(editPostRequest(props.params.cuid, post)),
   };
 }

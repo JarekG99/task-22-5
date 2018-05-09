@@ -64,7 +64,7 @@ export class App extends Component {
 }
 
 App.propTypes = {
-  children: PropTypes.object.isRequired,
+  children: PropTypes.object,
   dispatch: PropTypes.func.isRequired,
   intl: PropTypes.object.isRequired,
 };
