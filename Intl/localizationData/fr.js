@@ -3,6 +3,7 @@ export default {
   messages: {
     siteTitle: 'MERN blog de démarrage',
     addPost: 'Ajouter le message',
+    editPost: 'Editer le message',
     Home: 'Maison',
     PostPage: 'Ajouter le message',
     About: 'Sur',
